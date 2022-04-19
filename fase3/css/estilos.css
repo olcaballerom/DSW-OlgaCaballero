@@ -1,0 +1,66 @@
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 30px;
+    background-color: #DAB88B;
+}
+nav{
+    background-color: #F3E9DD;
+}
+section{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+article{
+    grid-column: 1/4;
+}
+aside{
+    background-color: #FDF6EC;
+    grid-column: 4/5;
+}
+footer{
+    background-color: #B7CADB;
+}
+ul, ol{
+    list-style: none;
+    display: inline-block;
+}
+.menu{
+    padding: 0px 15px;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+}
+.menu>li{
+    float: left;
+}
+.menu li a{
+    background-color: #F3E9DD;
+    color: black;
+    text-decoration: none;
+    padding: 15px 80px;
+    display: block;
+}
+.menu li a:hover{
+    background-color: #DAB88B;
+}
+.menu li ul{
+    display: none;
+    margin-left: auto;
+    margin-right: auto;
+    position: absolute;
+    min-width: 100px;
+}
+.menu li:hover > ul{
+    display: block;
+}
+.menu li ul li{
+    position: relative;
+}
+.menu li ul li ul{
+    right: 100px;
+}
